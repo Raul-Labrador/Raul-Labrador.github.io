@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            color: #333;
+            color: #e0e0e0;
+            background-color: #121212;
         }
 
         header {
@@ -20,6 +21,7 @@
             padding: 1rem 0;
             text-align: center;
         }
+        /*#menu{}*/
 
         nav {
             background: #444;
@@ -35,6 +37,9 @@
 
         nav a:hover {
             text-decoration: underline;
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+            cursor: pointer;
         }
 
         .container {
@@ -60,6 +65,43 @@
             text-align: center;
         }
 
+        .skills {
+            margin: 2rem 0;
+        }
+
+        .skill {
+            margin-bottom: 1rem;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-bar {
+            background: #f3f3f3;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 20px;
+            width: 100%;
+            position: relative;
+        }
+
+        .progress {
+            background: #ffeb3b;
+            height: 100%;
+            border-radius: 5px 0 0 5px;
+            position: absolute;
+        }
+
+        .contacto:hover {
+            color:#ffeb3b;
+        }
+
+        .clickable:hover {
+            text-decoration:double;
+        }
+
         footer {
             background: #333;
             color: #fff;
@@ -76,26 +118,32 @@
         footer a:hover {
             text-decoration: underline;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <header>
-        <h1>Mi Portafolio</h1>
+        <h1>Mi Portfolio</h1>
         <p>Bienvenido a mi espacio personal donde muestro mis proyectos y habilidades.</p>
     </header>
 
-    <nav>
+    <nav id="menu">
         <a href="#about">Sobre mí</a>
         <a href="#projects">Proyectos</a>
+        <a href="#titles">Títulos</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#skills">Habilidades</a>
         <a href="#contact">Contacto</a>
     </nav>
-
+    
     <div class="container">
+<!--Sobre mí -->
         <section id="about" class="section">
             <h2>Sobre mí</h2>
-            <p>Hola, soy Raúl Labrador Pérez, estoy estudiando actualmente Desarrollo de Aplicaicones Web y tengo la titulación de grado superior de DEPIM.</p>
+            <p>Hola, soy Raul Labrador Péreez, tengo 21 años y soy un estudiante de Desarrollo de Aplicaciones Web, mis aficiones son el deporte, los videojuegos y la tecnología.
+            Actualmente estoy interesado en desarrollar mis habilidades en los lenguejes mencionados en las habilidades, pero me encantaría aprender mas lenguajes en el futuro.
+            </p>
         </section>
-
+<!--Proyectos -->
         <section id="projects" class="section">
             <h2>Proyectos</h2>
             <div class="projects">
@@ -116,14 +164,90 @@
                 </div>
             </div>
         </section>
-
+<!--Títulos-->
+        <section id="titles" class="section">
+            <h2>Títulos</h2>
+            <ul>
+                <li>Bachillerato</li>
+                <li>Titulación B1 de ingles en cambridge</li>
+                <li>Diseño y edición de Publicaciones Impresas y Multimedia</li>
+                <li>Curso de edición 8 horas</li>
+                <li>Curso de modulación 3D 6 horas</li>
+                <li>Curso de edición 6 horas</li>
+                <li>Desarrollo de Aplicaciones Web (En proceso)</li>
+            </ul>
+        </section>
+<!--Experiencia-->
+        <section id="experience" class="section">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>
+                    <h3>Prácticas Empresa DEPIM</h3>
+                    <p>EbenEzer: Marzo 2024- Junio 2024</p>
+                </li>                
+        </section>
+<!--Habilidades -->
+        <section id="skills" class="section">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 20%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Photoshop</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Illustrator</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">In-Desing</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 55%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">AdobeXD</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Contacto-->
         <section id="contact" class="section">
             <h2>Contacto</h2>
             <p>Puedes contactarme en:</p>
             <ul>
-                <li>Email: <a href="raullabrador10@gmail.com">raullabrador10@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/" target="_blank">Raul Labrador Pérez</a></li>
-                <li>GitHub: <a href="https://github.com/Raul-Labrador" target="_blank">Raul-Labrador</a></li>
+                <li class ="contacto">Email: <a href="mailto:raullabrador10@gmail.com" class="clickable">raullabrador10@gmail.com</a></li>
+                <li class="contacto">LinkedIn: <a href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/" target="_blank" class="clickable">Raul Labrador Pérez</a></li>
+                <li class ="contacto">GitHub: <a href="https://github.com/Raul-Labrador" target="_blank" class="clickable">Raul-Labrador</a></li>
+                <li>Teléfono: +34 637 43 54 97</li>
             </ul>
         </section>
     </div>
