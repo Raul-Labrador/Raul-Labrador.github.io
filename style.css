@@ -48,6 +48,12 @@ nav a:hover {
     margin: 2rem 0;
 }
 
+li{
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: large;
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -109,6 +115,7 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+    width:100%;
 }
 
 footer a:hover {
