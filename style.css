@@ -4,23 +4,27 @@
     padding: 0;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #e0e0e0;
-    background-color: #121212;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+h2{
+    color:#0077B6;
 }
 
 header {
-    background: #333;
+    background: #153140;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
 nav {
-    background: #444;
+    background: #204A60;
     padding: 0.5rem 0;
     text-align: center;
 }
@@ -33,7 +37,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #ffeb3b;
+    color: #F77F00;
     transition: color 0.3s ease;
     cursor: pointer;
 }
@@ -68,10 +72,13 @@ li{
 }
 
 .project:hover{
-    background: #313030;
+    background: #2A9D8F;
     transition: background 0.3s ease;
-    box-shadow: 0 0 10px #ffeb3b;
+    box-shadow: 0 0 10px #7FDEFF;
     transform: translateY(-5px)
+}
+.project>a:hover{
+    color:#F77F00;
 }
 
 .skills {
@@ -97,14 +104,20 @@ li{
 }
 
 .progress {
-    background: #ffeb3b;
+    background: #2A9D8F;
     height: 100%;
     border-radius: 5px 0 0 5px;
     position: absolute;
 }
+a, #tel>num{
+    color:#0077B6;
+}
 
+a:hover, #tel>num:hover{
+    color:#2A9D8F;
+}
 .contacto:hover {
-    color:#ffeb3b;
+    color:#2A9D8F;
 }
 
 .clickable:hover {
@@ -112,15 +125,15 @@ li{
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #F5F5F5;
+    color: #333333;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
 }
 
 footer a {
-    color: #fff;
+    color: #333333;
     text-decoration: none;
     width:100%;
 }
