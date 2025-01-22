@@ -67,6 +67,13 @@ li{
     text-align: center;
 }
 
+.project:hover{
+    background: #313030;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px #ffeb3b;
+    transform: translateY(-5px)
+}
+
 .skills {
     margin: 2rem 0;
 }
