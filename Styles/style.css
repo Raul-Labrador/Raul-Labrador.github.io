@@ -383,9 +383,6 @@ footer .column > a:hover{
 }
 
 @media (width < 900px){
-    .nav-links{
-        display: none;
-    }
     header{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -404,10 +401,6 @@ footer .column > a:hover{
 }
 
 @media (width < 600px){
-    header .image::before{
-        display: none;
-    }
-
     .features{
         grid-template-columns: repeat(1, 1fr);
     }
