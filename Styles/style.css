@@ -279,6 +279,39 @@ section .header{
     border-color: #1e40af;
 }
 
+.document{
+    display: flex;
+    justify-content: center;
+}
+
+.document embed{
+    
+    width: 500px;
+    height: 500px;
+}
+
+#marcapaginas embed{
+    width: 550px;
+    height: 850px;
+}
+
+#imagen embed{
+    width: 600px;
+    height: 337px;
+}
+
+#manual embed{
+    width: 500px;
+    height: 500px;
+}
+
+.container p{
+    color: #ccc;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
 ul li{
     color:#ccc;
     padding-bottom:1rem;
