@@ -1,52 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="..\Styles\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Experiencia</title>
 </head>
 <body>
-    <header>
-        <h1>Experienicia</h1>
-        <p>Experiencia laboral y aspiraciones de futuro</p>
-    </header>
+    <nav>
+        <div class="nav-logo">
+            <a href="../index.html">
+                <img src="../images/logo personal blanco.png">
+            </a>
+        </div>
 
-    <nav id="menu">
-        <a href="..\index.html">Sobre mí</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="experiencia.html">Experiencia</a>
+        <ul id="menu" class="nav-links">
+            <li class="link"><a href="../index.html">Home</a></li>
+            <li id="link1" class="link"><a href="SobreMi.html">Sobre Mí</a></li>
+            <li id="link2" class="link"><a href="Proyectos.html">Proyectos</a></li>
+            <li id="link3" class="link"><a href="Experiencia.html">Experiencia</a></li>
+        </ul>
+        <a href="#footer"><button class="btn">Contactame</button></a>
     </nav>
-    
-    <div class="container">
-<!--Experiencia-->
-        <section id="experience" class="section">
-            <ul>
-                <li>
-                    <h3>Entrada a la universidad</h3>
-                    <p>Entre a la universidad de Granada de Ingeniería Informática, aunque mi paso fue breve fue el primer contacto que tuve con el mundo de la programación.</p>
-                </li>  
-                <li>
-                    <h3>Prácticas Empresa DEPIM</h3>
-                    <p>EbenEzer | Marzo 2024 - Junio 2024</p>
-                    <p>En estas practicas aprendí a trabajar en solitario como en equipo, ha tener una buena organización y comunicación con los compañeros, además de aprender a organizarme el tiempo y el trabajo.</p>
-                </li>
-                <li>
-                    <h3>Prácticas Empresa DAW</h3>
-                    <p>Clover | 15 Marzo 2025 - 30 Mayo 2025</p>
-                    <p>En estas practicas aprendí sobre el preprocesamiento de datos con Python, librerias como Matplotlib, Pandas y Numpy, además de aprender a la busqueda de información y aprendizaje autodidacta</p>
-                </li>  
-                <li>
-                    <h3>Futuro</h3>
-                    <p>Me gustaría trabajar en una empresa de desarrollo de aplicaciones web, compaginando un poco la programción y estructura de la página web, como su diseño.</p>
-                    <p>Además me gustaría aprender algunos frameworks, ya sea en las propias empresas o de manera autodidacta.
-                    </p>
-                </li>         
-        </section>
-    </div>
 
-    <footer>
-        <p>&copy; 2025 Raúl Labrador Pérez. Todos los derechos reservados.</p>
+    <section class="container">
+        <ul>
+        <li>
+            <h3>Entrada a la universidad</h3>
+            <p>Entre a la universidad de Granada de Ingeniería Informática, aunque mi paso fue breve fue el primer contacto que tuve con el mundo de la programación.</p>
+        </li>
+        <li>
+            <h3>Prácticas Empresa DEPIM</h3>
+            <p>EbenEzer | Marzo 2024 - Junio 2024</p>
+            <p>En estas practicas aprendí a trabajar en solitario como en equipo, ha tener una buena organización y comunicación con los compañeros, además de aprender a organizarme el tiempo y el trabajo.</p>
+        </li>
+        <li>
+            <h3>Prácticas Empresa DAW</h3>
+            <p>CloverBiosoft | 15 Marzo 2025 - 30 Mayo 2025</p>
+            <p>En estas practicas aprendí sobre el preprocesamiento de datos con Python, librerias como Matplotlib, Pandas y Numpy, además de aprender a la busqueda de información y aprendizaje autodidacta</p>
+        </li>
+        <li>
+            <h3>Futuro</h3>
+            <p>Me gustaría trabajar en una empresa de desarrollo de aplicaciones web, compaginando un poco la programción y estructura de la página web, como su diseño.</p>
+            <p>Además me gustaría aprender algunos frameworks, ya sea en las propias empresas o de manera autodidacta.</p>
+        </li>
+    </ul>
+    </section>
+
+        <footer id="footer" class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="../images/logo personal blanco.png">
+            </div>
+            <p>
+                Raúl Labrador Pérez
+            </p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/Raul-Labrador" target="_blank"><i class="ri-github-fill"></i></a>
+            </div>
+        </div>
+
+        <div class="column">
+            <h4>Sobre Mi</h4>
+            <a href="index.html">PortFolio</a>
+            <a href="../documents/CV Raúl Labrador Pérez.pdf" target="_blank">CV</a>
+        </div>
+
+        <div class="column">
+            <h4>Contactame</h4>
+            <p>raullabrador10@gmail.com</p>
+            <p>+34 637 43 54 97</p>
+        </div>
+        <div class="container">
+            <a href="#menu"><button class="btn">Subir</button></a>
+        </div>
     </footer>
+
+    <div class="copyright">
+        Copyright © 2025 Raúl Labrador Pérez
+    </div>
 </body>
 </html>

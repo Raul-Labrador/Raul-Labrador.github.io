@@ -1,155 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="Styles\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Main</title>
 </head>
 <body>
-    <header>
-        <h1>Mi Portfolio</h1>
-        <p>Bienvenido a mi espacio personal donde muestro mis proyectos y habilidades.</p>
+    
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/logo personal blanco.png">
+            </a>
+        </div>
+
+        <ul id="menu" class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li id="link1" class="link"><a href="pages/SobreMi.html">Sobre Mí</a></li>
+            <li id="link2" class="link"><a href="pages/Proyectos.html">Proyectos</a></li>
+            <li id="link3" class="link"><a href="pages/Experiencia.html">Experiencia</a></li>
+        </ul>
+        <a href="#footer"><button class="btn">Contactame</button></a>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>CREATE YOUR SITE LIKE A PRO</h4>
+            <h1>Hola, soy <span>Raúl</span>, Programador Web</h1>
+            <p>
+                Hola, soy Raul Labrador Pérez, tengo 21 años y soy un estudiante de Desarrollo de Aplicaciones Web, mis aficiones son el deporte, 
+                los videojuegos y la tecnología. Actualmente estoy interesado en desarrollar mis habilidades en los lenguejes mencionados en las habilidades, 
+                pero me encantaría aprender mas lenguajes en el futuro. Anteriormente estudié un grado superior de DEPIM (Diseño y Edición de Publicaciones Impresas y Multimedia), 
+                donde aprendí a usar diversor programas del paquete Adobe, además del interes por aprender diseño gráfico y diseño web.
+            </p>
+            <a href="pages/SobreMi.html"><button class="btn">Empezamos</button></a>
+        </div>
+        <div class="iamge">
+            <img src="images/header.png">
+        </div>
     </header>
 
-    <nav id="menu">
-        <a href="index.html">Sobre mí</a>
-        <a href="pages\proyectos.html">Proyectos</a>
-        <a href="pages\experiencia.html">Experiencia</a>
-    </nav>
-    
-    <div class="container">
-<!--Sobre mí -->
-        <section id="about" class="section">
-            <h2>Sobre mí</h2>
-            <p>Hola, soy Raul Labrador Pérez, tengo 21 años y soy un estudiante de Desarrollo de Aplicaciones Web, mis aficiones son el deporte, los videojuegos y la tecnología.
-            Actualmente estoy interesado en desarrollar mis habilidades en los lenguejes mencionados en las habilidades, pero me encantaría aprender mas lenguajes en el futuro.
-            Anteriormente estudié un grado superior de DEPIM (Diseño y Edición de Publicaciones Impresas y Multimedia), donde aprendí a usar diversor programas del paquete Adobe, además del interes por aprender diseño gráfico y diseño web.
+    <footer id="footer" class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo personal blanco.png">
+            </div>
+            <p>
+                Raúl Labrador Pérez
             </p>
-        </section>
-<!--Títulos-->
-        <section id="titles" class="section">
-            <h2>Títulos</h2>
-            <ul>
-                <li>Desarrollo de Aplicaciones Web</li>
-                <ul>IES Zaidín Vergeles | Septiembre 2024 -Actualidad</ul>
-                <ul>Aprendí estructuración de la página con HTML, css y agregar funcionalidad a la página con javascript, consultas en base de datos y creacion de base de datos,  cualificado para utilizar git, gestion de diferentes sistemas operativos en maquinas virtuales, y por último creacion de aplicaciones en java.</ul>
-
-                <li>Curso Fundamentos profesionales del desarrollo de software</li>
-                <ul>Microsoft y Linkedin | Julio 2024</ul>
-                <ul>Aprendí las habilidades báscias para comenzar a estuidar desarrollo de software</ul>
-
-                <li>Curso de 3D</li>
-                <ul>IES Ángel Ganivet | Noviembre 2023</ul>
-                <ul>Aprendí a utilizar un software 3D, crear objetos 3D, crear animaciones</ul>
-
-                <li>Curso de edición de Photoshop</li>
-                <ul>IES Ángel Ganivet | Noviembre 2023</ul>
-                <ul>Aprendí el retoque de fotografías</ul>
-
-                <li>Diseño y edición de Publicaciones Impresas y Multimedia</li>
-                <ul>IES Ángel Ganivet | Septimebre 2022 - Julio 2024</ul>
-                <ul>Diseño de páginas web y aplicaciones móviles, búsqueda de información para trabajos, diseño de elementos corporativos para las empresas</ul>
-
-                <li>Titulación B1 de ingles</li>
-                <ul>Cambriedge</ul>
-                <ul>Desarrollé mis habilidades entendiendo el idioma </ul>
-
-                <li>Bachillerato</li>
-                <ul>IES Albalonga | Septiembre 2019 - Junio 2021</ul>
-                <ul>Aprendí a manejar el estres</ul>
-            </ul>
-        </section>
-<!--Habilidades -->
-        <section id="skills" class="section">
-            <h2>Habilidades</h2>
-            <div class="skills">
-                <h3>- Lenguajes</h3>
-                <div class="skill">
-                    <div class="skill-name">Java</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 60%;"></div>
-                    </div>
-                <div class="skill">
-                    <div class="skill-name">HTML</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">CSS</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 60%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 25%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">MySQL</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 35%;"></div>
-                    </div>
-                </div>
-                <br>
-                <h3>- Paquete Adobe</h3>
-                <div class="skill">
-                    <div class="skill-name">Photoshop</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 50%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Illustrator</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 65%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">In-Desing</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 55%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">AdobeXD</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 30%;"></div>
-                    </div>
-                </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/Raul-Labrador" target="_blank"><i class="ri-github-fill"></i></a>
             </div>
-            <div>
-                <br>
-                <p>Quitando la habilidad en los programas y lenguajes mencionados anteriormente, mis habilidades personales son:</p>
-                <ul>
-                    <li>Competencias IT</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Trabajo en solitario</li>
-                    <li>Buena comunicacion</li>
-                    <li>Responsable</li>
-                    <li>Puntualidad</li>
-                    <li>Respetuoso</li>
-                </ul>
-            </div>
-        </section>
-<!--Contacto-->
-        <section id="contact" class="section">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme en:</p>
-            <ul>
-                <li class ="contacto">Email: <a href="mailto:raullabrador10@gmail.com" class="clickable">raullabrador10@gmail.com</a></li>
-                <li class="contacto">LinkedIn: <a href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/" target="_blank" class="clickable">Raul Labrador Pérez</a></li>
-                <li class ="contacto">GitHub: <a href="https://github.com/Raul-Labrador" target="_blank" class="clickable">Raul-Labrador</a></li>
-                <li id="tel">Teléfono: <num>+34 637 43 54 97</num></li>
-            </ul>
-        </section>
+        </div>
+
+        <div class="column">
+            <h4>Subir</h4>
+            <a href="index.html">PortFolio</a>
+            <a href="documents/CV Raúl Labrador Pérez.pdf" target="_blank">CV</a>
+        </div>
+
+        <div class="column">
+            <h4>Contactame</h4>
+            <p>raullabrador10@gmail.com</p>
+            <p>+34 637 43 54 97</p>
+        </div>
+        <div class="container">
+            <a href="#menu"><button class="btn">Subir</button></a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2025 Raúl Labrador Pérez
     </div>
 
-    <footer>
-        <p>&copy; 2025 Raúl Labrador Pérez. Todos los derechos reservados.</p>
-    </footer>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>

@@ -1,0 +1,42 @@
+.container ul li{
+    font-size: 1.25rem;
+    color:white;
+}
+
+.container ul ul{
+    color:#ccc;
+    padding-bottom: 1.5rem;
+}
+
+.skills {
+    margin: 2rem 0;
+    color:white;
+}
+
+.skill {
+    margin-bottom: 1rem;
+    color:white;
+}
+
+.skill-name {
+    font-weight: bold;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+    color:#ccc;
+}
+
+.progress-bar {
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.progress {
+    background: #1d4ed8;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+}

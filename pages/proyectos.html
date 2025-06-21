@@ -1,47 +1,106 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="..\Styles\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Proyectos</title>
 </head>
 <body>
-    <header>
-        <h1>Proyectos</h1>
-        <p>Proyectos personales de Diseño y Desarrollo de Aplicaciones Web.</p>
-    </header>
+    <nav>
+        <div class="nav-logo">
+            <a href="../index.html">
+                <img src="../images/logo personal blanco.png">
+            </a>
+        </div>
 
-    <nav id="menu">
-        <a href="..\index.html">Sobre mí</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="experiencia.html">Experiencia</a>
+        <ul id="menu" class="nav-links">
+            <li class="link"><a href="../index.html">Home</a></li>
+            <li id="link1" class="link"><a href="SobreMi.html">Sobre Mí</a></li>
+            <li id="link2" class="link"><a href="Proyectos.html">Proyectos</a></li>
+            <li id="link3" class="link"><a href="Experiencia.html">Experiencia</a></li>
+        </ul>
+        <a href="#footer"><button class="btn">Contactame</button></a>
     </nav>
-    
-    <div class="container">
-<!--Proyectos -->
-        <section id="projects" class="section">
-            <p>Esta propia página web está siendo un trabajo que he empezado en clase, y la estoy mejorando poco a poco con los conocimientos que voy adquiriendo.</p>
-            <div class="projects">
-                <div class="project">
-                    <h3>TFG ciclo DEPIM</h3>
-                    <p>Manual de indentidad corporativa, de renovación de logotipo y diseños de restaurante</p>
-                    <a href="../trabajos/Manual.pdf" target="_blank">Ver PDF</a>
+        <section class="container">
+        <h2 class="header">Proyectos y trabajos</h2>
+        <p class="sub-header">
+            Aqui vamos a ver algunos de los trabajos que he realizado en el ciclo de diseño o en desarrollo de aplicaciones Web, 
+            este mismo porfolio es un trabajo personal
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>TFG ciclo DEPIM</h4>
+                    <h3></h3>
+                    <p>
+                        Manual de identidad corporativa, de renovación de logotipo y diseños de restaurante
+                    </p>
                 </div>
-                <div class="project">
-                    <h3>Proyectos de diseño pequeños</h3>
-                    <p>Aqui podrás encontrar alguno trabajos pequeños que he hecho en clase</p>
-                    <a href="trabajosPequeños.html">Ver más</a>
-                </div>
-                <div class="project">
-                    <h3>Proyectos Programación</h3>
-                    <p>Esta página todavía esta vacía pero iré subiendo aquí mis trabajos de este año</p>
-                    <a href="#">Ver más</a>
-                </div>
+                <a href="../documents/Manual.pdf" target="_blank"><button class="btn">Ver PDF</button></a>
+                
             </div>
-        </section>
-    <footer>
-        <p>&copy; 2025 Raúl Labrador Pérez. Todos los derechos reservados.</p>
+
+            <div class="card">
+                <div class="content">
+                    <h4>Proyectos de diseño pequeños</h4>
+                    <h3></h3>
+                    <p>
+                        Aqui podrás encontrar algunos trabajos pequeños que he realizado en clase
+                    </p>
+                </div>
+                <a href="Trabajos.html"><button class="btn">Ver más</button></a>
+                
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h4>Proyectos de programación</h4>
+                    <h3></h3>
+                    <p>
+                        Esta página todavía esta vacía pero iré subiendo aquí mis trabajos de este año
+                    </p>
+                </div>
+                <button class="btn">Ver más</button>
+            </div>
+        </div>
+    </section>
+
+        <footer id="footer" class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="../images/logo personal blanco.png">
+            </div>
+            <p>
+                Raúl Labrador Pérez
+            </p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/Raul-Labrador" target="_blank"><i class="ri-github-fill"></i></a>
+            </div>
+        </div>
+
+        <div class="column">
+            <h4>Sobre Mi</h4>
+            <a href="index.html">PortFolio</a>
+            <a href="../documents/CV Raúl Labrador Pérez.pdf" target="_blank">CV</a>
+        </div>
+
+        <div class="column">
+            <h4>Contactame</h4>
+            <p>raullabrador10@gmail.com</p>
+            <p>+34 637 43 54 97</p>
+        </div>
+        <div class="container">
+            <a href="#menu"><button class="btn">Subir</button></a>
+        </div>
     </footer>
+
+    <div class="copyright">
+        Copyright © 2025 Raúl Labrador Pérez
+    </div>
 </body>
 </html>
