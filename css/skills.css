@@ -1,0 +1,63 @@
+/* SKILLS.CSS */
+
+.skills-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Resplandor sutil en hover */
+.skill-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 200, 255, 0.04), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skill-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-4px);
+}
+.skill-card:hover::after { opacity: 1; }
+
+/* Tarjeta "En proceso" con tinte violeta */
+.skill-card.skill-wip {
+  border-color: rgba(164, 127, 212, 0.15);
+}
+
+.skill-icon {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+.skill-card-title {
+  font-family: var(--display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}

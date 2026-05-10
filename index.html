@@ -1,85 +1,497 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
-    <link rel="stylesheet" href="Styles/style.css">
-    <title>Personal Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Raúl Labrador — Desarrollador Fullstack especializado en Big Data e Inteligencia Artificial">
+  <title>Raúl Labrador — Data &amp; Fullstack Developer</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne+Mono&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS — orden: base → componentes → responsive -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    
-    <nav>
-        <div class="nav-logo">
-            <a href="index.html">
-                <img src="images/logo personal blanco.png">
-            </a>
-        </div>
 
-        <ul id="menu" class="nav-links">
-            <li class="link"><a href="index.html">Home</a></li>
-            <li id="link1" class="link"><a href="pages/SobreMi.html">Sobre Mí</a></li>
-            <li id="link2" class="link"><a href="pages/proyectos.html">Proyectos</a></li>
-            <li id="link3" class="link"><a href="pages/experiencia.html">Experiencia</a></li>
-        </ul>
-        <a href="#footer"><button class="btn">Contactame</button></a>
+  <!-- Cursor personalizado -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Fondo: canvas de partículas + grid overlay -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="grid-overlay"></div>
+
+  <div class="site-wrapper">
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+      <div class="nav-logo">RL<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Perfil</a></li>
+        <li><a href="#skills">Stack</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
     </nav>
 
-    <header class="container">
-        <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h4>Portfolio Personal</h4>
-            <h1>Hola, soy <span>Raúl</span>, Programador Web</h1>
-            <p>
-                Hola, soy Raul Labrador Pérez, tengo 21 años y soy un estudiante de Desarrollo de Aplicaciones Web, mis aficiones son el deporte, 
-                los videojuegos y la tecnología. Actualmente estoy interesado en desarrollar mis habilidades en los lenguejes mencionados en las habilidades, 
-                pero me encantaría aprender mas lenguajes en el futuro. Anteriormente estudié un grado superior de DEPIM (Diseño y Edición de Publicaciones Impresas y Multimedia), 
-                donde aprendí a usar diversor programas del paquete Adobe, además del interes por aprender diseño gráfico y diseño web.
-            </p>
-            <a href="pages/SobreMi.html"><button class="btn">Empezamos</button></a>
+    <!-- HERO -->
+    <header id="home">
+      <div class="hero-wrap">
+
+        <!-- Texto principal -->
+        <div class="hero-content">
+          <p class="hero-eyebrow">Disponible para nuevas oportunidades</p>
+          <h1 class="hero-name">Raúl<br>Labrador<span class="accent">.</span></h1>
+          <p class="hero-title">Fullstack Developer · Big Data &amp; AI · Data Designer</p>
+          <p class="hero-desc">
+            Técnico Superior en DAW y DEPIM. Actualmente especializándome en
+            <strong>Big Data &amp; Inteligencia Artificial</strong>. Construyo soluciones
+            que no solo funcionan — entienden los datos y los presentan con precisión visual.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+            <a href="assets/docs/CV_Raul_Labrador.pdf" class="btn btn-outline" target="_blank">Descargar CV</a>
+          </div>
         </div>
-        <div class="iamge">
-            <img src="images/header.png">
+
+        <!-- Tarjeta lateral con foto y stats -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="profile-photo-wrap">
+              <img
+                src="assets/img/profile-raul.jpg"
+                alt="Raúl Labrador"
+                onerror="this.parentElement.innerHTML='👨‍💻'"
+              >
+            </div>
+            <div class="card-stats">
+              <div class="stat-item">
+                <div class="stat-label">Formación</div>
+                <div class="stat-value">DAW</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Especialización</div>
+                <div class="stat-value">BigData</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Diseño</div>
+                <div class="stat-value">DEPIM</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Stack</div>
+                <div class="stat-value">Full</div>
+              </div>
+            </div>
+          </div>
         </div>
+
+      </div>
     </header>
 
-    <footer id="footer" class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="column">
-            <div class="logo">
-                <img src="images/logo personal blanco.png">
-            </div>
+    <!-- SOBRE MÍ -->
+    <section id="about">
+      <div class="about-inner">
+
+        <!-- Columna izquierda: texto + timeline -->
+        <div class="about-left">
+          <div class="section-tag reveal">Perfil</div>
+          <h2 class="section-title reveal reveal-d1">El perfil<br><em>híbrido</em></h2>
+
+          <div class="about-text reveal reveal-d2">
             <p>
-                Raúl Labrador Pérez
+              Mi formación combina el rigor técnico del
+              <strong>Desarrollo de Aplicaciones Web (DAW)</strong>
+              con el ojo visual del
+              <strong>Diseño y Edición de Publicaciones (DEPIM)</strong>.
             </p>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="https://github.com/Raul-Labrador" target="_blank"><i class="ri-github-fill"></i></a>
+            <p>
+              Actualmente me especializo en <strong>Big Data &amp; IA</strong>,
+              cerrando el círculo: capturar el dato, procesarlo con inteligencia
+              y exponerlo a través de interfaces impecables.
+            </p>
+            <p>Busco equipos donde la tecnología y el dato sean el núcleo, no la decoración.</p>
+          </div>
+
+          <div class="timeline reveal reveal-d3">
+
+            <div class="timeline-item">
+              <div class="tl-dot">✦</div>
+              <div class="tl-content">
+                <div class="tl-year">2024 – Actualmente</div>
+                <div class="tl-title">Especialización Big Data &amp; IA</div>
+                <div class="tl-sub">Machine Learning · Python · Análisis de datos · Visualización</div>
+              </div>
             </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot">✦</div>
+              <div class="tl-content">
+                <div class="tl-year">2022 – 2024</div>
+                <div class="tl-title">CFGS — Desarrollo de Aplicaciones Web</div>
+                <div class="tl-sub">Fullstack · React · Node.js · PHP · SQL · Java</div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot">✦</div>
+              <div class="tl-content">
+                <div class="tl-year">2020 – 2022</div>
+                <div class="tl-title">CFGS — Diseño y Edición (DEPIM)</div>
+                <div class="tl-sub">Adobe Suite · UX/UI · Identidad visual · Publicaciones</div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="column">
-            <h4>Sobre Mi</h4>
-            <a href="index.html">PortFolio</a>
-            <a href="documents/CV Raúl Labrador Pérez.pdf" target="_blank">CV</a>
+        <!-- Columna derecha: barras de habilidad + terminal -->
+        <div class="about-right reveal reveal-d2">
+          <div class="radar-wrap">
+            <p class="radar-title">// nivel de expertise</p>
+
+            <div class="bars-list" id="bars-container">
+              <div class="bar-item">
+                <div class="bar-top">
+                  <span class="bar-label">Fullstack Web (HTML/CSS/JS/PHP)</span>
+                  <span class="bar-pct">88%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="--w:0.88"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-top">
+                  <span class="bar-label">React / Node.js</span>
+                  <span class="bar-pct">78%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="--w:0.78"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-top">
+                  <span class="bar-label">SQL / Bases de Datos</span>
+                  <span class="bar-pct">75%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="--w:0.75"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-top">
+                  <span class="bar-label">Adobe Suite / UI Design</span>
+                  <span class="bar-pct">82%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="--w:0.82"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-top">
+                  <span class="bar-label">Python &amp; Data Analysis</span>
+                  <span class="bar-pct">55%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="--w:0.55"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-top">
+                  <span class="bar-label">Machine Learning</span>
+                  <span class="bar-pct">38%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="--w:0.38"></div></div>
+              </div>
+            </div>
+
+            <!-- Terminal decorativo -->
+            <div class="terminal">
+              <div class="terminal-bar">
+                <div class="term-dot r"></div>
+                <div class="term-dot y"></div>
+                <div class="term-dot g"></div>
+              </div>
+              <div class="terminal-body">
+                <div class="term-line"><span class="prompt">$</span><span class="cmd">whoami</span></div>
+                <div class="term-line"><span class="out">raul_labrador — data_developer</span></div>
+                <div class="term-line"><span class="prompt">$</span><span class="cmd">skills --focus</span></div>
+                <div class="term-line"><span class="success">✓ fullstack · bigdata · ia · design</span></div>
+                <div class="term-line"><span class="prompt">$</span><span class="cmd">status</span></div>
+                <div class="term-line"><span class="out">&gt; open_to_work: <span class="success">true</span></span></div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="column">
-            <h4>Contactame</h4>
-            <p>raullabrador10@gmail.com</p>
-            <p>+34 637 43 54 97</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="skills-inner">
+        <div class="section-tag reveal">Stack tecnológico</div>
+        <h2 class="section-title reveal reveal-d1">Las herramientas<br>del <em>arsenal</em></h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-card reveal reveal-d1">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-card-title">Frontend &amp; Web</div>
+            <div class="skill-tags">
+              <span class="tag hot">HTML5</span>
+              <span class="tag hot">CSS3</span>
+              <span class="tag hot">JavaScript</span>
+              <span class="tag hot">React</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">Responsive Design</span>
+              <span class="tag">Animaciones CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-d2">
+            <div class="skill-icon">🛠</div>
+            <div class="skill-card-title">Backend &amp; DB</div>
+            <div class="skill-tags">
+              <span class="tag hot">PHP</span>
+              <span class="tag hot">Node.js</span>
+              <span class="tag hot">SQL / MySQL</span>
+              <span class="tag">Java</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">WooCommerce API</span>
+              <span class="tag">Arquitectura MVC</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-d3">
+            <div class="skill-icon">🤖</div>
+            <div class="skill-card-title">Big Data &amp; IA</div>
+            <div class="skill-tags">
+              <span class="tag learning">Python</span>
+              <span class="tag learning">Pandas / NumPy</span>
+              <span class="tag learning">Machine Learning</span>
+              <span class="tag learning">Visualización datos</span>
+              <span class="tag learning">Matplotlib / Seaborn</span>
+              <span class="tag learning">LLMs &amp; Prompting</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-d1">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-card-title">Diseño &amp; Adobe</div>
+            <div class="skill-tags">
+              <span class="tag hot">Photoshop</span>
+              <span class="tag hot">Illustrator</span>
+              <span class="tag hot">InDesign</span>
+              <span class="tag">UX / UI Design</span>
+              <span class="tag">Identidad visual</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-d2">
+            <div class="skill-icon">🔧</div>
+            <div class="skill-card-title">Herramientas &amp; Entorno</div>
+            <div class="skill-tags">
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Linux / Bash</span>
+              <span class="tag">Docker (aprendiendo)</span>
+              <span class="tag">Agile / Scrum</span>
+            </div>
+          </div>
+
+          <div class="skill-card skill-wip reveal reveal-d3">
+            <div class="skill-icon">📈</div>
+            <div class="skill-card-title">En proceso · 2024–25</div>
+            <div class="skill-tags">
+              <span class="tag learning">Spark / Hadoop</span>
+              <span class="tag learning">Power BI</span>
+              <span class="tag learning">TensorFlow</span>
+              <span class="tag learning">NLP</span>
+              <span class="tag learning">Cloud (AWS/GCP)</span>
+              <span class="tag learning">ETL Pipelines</span>
+            </div>
+          </div>
+
         </div>
-        <div class="container">
-            <a href="#menu"><button class="btn">Subir</button></a>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects">
+      <div class="projects-inner">
+        <div class="section-tag reveal">Proyectos</div>
+        <h2 class="section-title reveal reveal-d1">Lo que he<br><em>construido</em></h2>
+
+        <div class="projects-grid">
+
+          <!-- Proyecto 1: Plugin LAE -->
+          <div class="project-card reveal reveal-d1">
+            <div class="project-img">
+              <img
+                src="assets/img/plugin-LAE.png"
+                alt="Captura del Plugin LAE"
+                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>plugin-LAE.png</div>'"
+              >
+            </div>
+            <div class="project-info">
+              <span class="project-status status-live">Producción</span>
+              <div class="project-name">Plugin LAE</div>
+              <p class="project-desc">
+                Plugin integral de WordPress para garantizar el cumplimiento de normativas
+                de Juego Responsable en España. Arquitectura DRY unificando Bloques Gutenberg
+                y Shortcodes. Integración nativa con la API de WooCommerce para validación en
+                checkout y correos transaccionales. Sistema de variables CSS dinámicas para
+                integración transparente con cualquier tema hijo.
+              </p>
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">PHP</span>
+                <span class="tag">WooCommerce API</span>
+                <span class="tag">DRY</span>
+                <span class="tag">Gutenberg</span>
+                <span class="tag">CSS Vars</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Raul-Labrador" target="_blank" rel="noopener">↗ GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Portfolio -->
+          <div class="project-card reveal reveal-d2">
+            <div class="project-img">
+              <img
+                src="assets/img/portfolio.png"
+                alt="Captura del portfolio"
+                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>portfolio.png</div>'"
+              >
+            </div>
+            <div class="project-info">
+              <span class="project-status status-live">Producción</span>
+              <div class="project-name">Portfolio Personal</div>
+              <p class="project-desc">
+                Este mismo sitio. Diseñado y desarrollado desde cero sin frameworks.
+                Canvas con sistema de partículas procedural, módulos ES6, animaciones
+                CSS avanzadas, tipografía editorial y una paleta orientada a Data &amp; Tech.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vanilla JS (ES Modules)</span>
+                <span class="tag">CSS modular</span>
+                <span class="tag">Canvas API</span>
+                <span class="tag">Diseño propio</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Raul-Labrador" target="_blank" rel="noopener">↗ GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: Big Data WIP (ocupa todo el ancho) -->
+          <div class="project-card wip reveal reveal-d3">
+            <div class="project-img">
+              <div class="project-img-placeholder">
+                ▓▒░ PRÓXIMAMENTE ░▒▓<br><br>
+                <span style="font-size:0.65rem;color:rgba(123,94,167,0.6);letter-spacing:0.05em">CARGANDO DATOS...</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-status status-wip">En Desarrollo</span>
+              <div class="project-name">Proyecto Big Data — Verano 2025</div>
+              <p class="project-desc">
+                Pipeline de análisis de datos con visualizaciones interactivas. Exploración
+                de datasets reales con Python, Pandas y técnicas de ML. Dashboard de resultados
+                desplegado con una interfaz limpia. Proyecto en construcción activa durante
+                la especialización.
+              </p>
+              <div class="project-tags">
+                <span class="tag learning">Python</span>
+                <span class="tag learning">Pandas</span>
+                <span class="tag learning">Scikit-Learn</span>
+                <span class="tag learning">Visualización</span>
+                <span class="tag learning">Dashboard</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Raul-Labrador" target="_blank" rel="noopener">↗ Seguir en GitHub</a>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="contact-grid">
+
+          <!-- Columna izquierda -->
+          <div class="contact-left">
+            <div class="section-tag reveal">Contacto</div>
+            <h2 class="section-title reveal reveal-d1">¿Hablamos<br><em>de datos?</em></h2>
+            <p class="contact-blurb reveal reveal-d2">
+              Estoy abierto a oportunidades en el sector tech y data — prácticas,
+              proyectos freelance o colaboraciones donde el dato y la tecnología
+              estén en el centro.
+            </p>
+            <a href="mailto:raullabrador10@gmail.com" class="email-block reveal reveal-d3">
+              <span class="email-icon">✉</span>
+              <span class="email-text">raullabrador10@gmail.com</span>
+            </a>
+            <div class="social-row reveal reveal-d4">
+              <a
+                href="https://www.linkedin.com/in/ra%C3%BAl-labrador-p%C3%A9rez-b2159126a/"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+              >↗ LinkedIn</a>
+              <a
+                href="https://github.com/Raul-Labrador"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+              >↗ GitHub</a>
+            </div>
+          </div>
+
+          <!-- Columna derecha: tarjeta de disponibilidad -->
+          <div class="contact-right reveal reveal-d2">
+            <div class="availability-card">
+              <div class="avail-status">
+                <div class="avail-dot"></div>
+                <div class="avail-text">Disponible ahora</div>
+              </div>
+              <div class="avail-title">Buscando mi primer reto profesional en Data &amp; Tech</div>
+              <div class="avail-sub">Prácticas · Junior Dev · Data Analyst · Proyectos</div>
+              <div class="interest-tags">
+                <span class="itag">Big Data</span>
+                <span class="itag">IA / ML</span>
+                <span class="itag">Fullstack</span>
+                <span class="itag">Data Viz</span>
+                <span class="itag">Análisis</span>
+                <span class="itag">Consultoría tech</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-left">© 2025 Raúl Labrador</div>
+      <div class="footer-right">DAW · DEPIM · <span>BigData &amp; IA</span></div>
     </footer>
 
-    <div class="copyright">
-        Copyright © 2025 Raúl Labrador Pérez
-    </div>
+  </div>
 
-    <!-- <script src="script.js"></script> -->
+  <script type="module" src="js/main.js"></script>
+
 </body>
 </html>

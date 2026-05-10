@@ -1,0 +1,43 @@
+/* RESPONSIVE.CSS */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+  /* Nav: ocultar enlaces (añadir menú hamburguesa si se quiere) */
+  .nav-links { display: none; }
+
+  /* Hero: columna única, ocultar tarjeta lateral */
+  .hero-wrap    { grid-template-columns: 1fr; }
+  .hero-visual  { display: none; }
+
+  /* About: columna única */
+  .about-inner  { grid-template-columns: 1fr; gap: 40px; }
+
+  /* Skills: 2 columnas */
+  .skills-grid  { grid-template-columns: repeat(2, 1fr); }
+
+  /* Projects: columna única, variante WIP vuelve a columna */
+  .projects-grid              { grid-template-columns: 1fr; }
+  .project-card.wip           { flex-direction: column; }
+  .project-card.wip .project-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Contact: columna única */
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  section, header { padding: 80px 5%; }
+
+  /* Skills: columna única en móvil */
+  .skills-grid { grid-template-columns: 1fr; }
+
+  /* Hero: ajuste tipográfico */
+  .hero-eyebrow { font-size: 0.7rem; }
+}
