@@ -38,8 +38,7 @@ export function initSkillBars() {
 
       document.querySelectorAll('.bar-fill').forEach((bar, i) => {
         // Leer el valor --w definido en el style inline de cada barra
-        const match = bar.style.cssText.match(/--w:([\d.]+)/);
-        const targetScale = match ? parseFloat(match[1]) : 1;
+        const targetScale = parseFloat(bar.style.getPropertyValue('--w')) || 1;
 
         setTimeout(() => {
           bar.style.transform = `scaleX(${targetScale})`;

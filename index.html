@@ -27,7 +27,7 @@
 
   <!-- Cursor personalizado -->
   <div class="cursor-dot" id="cursor-dot"></div>
-  <div class="cursor-ring" id="cursor-rin g"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
 
   <!-- Fondo: canvas de partículas + grid overlay -->
   <canvas id="bg-canvas"></canvas>
@@ -321,7 +321,7 @@
       </div>
     </section>
 
-    <!-- PROYECTOS -->
+<!-- PROYECTOS -->
     <section id="projects">
       <div class="projects-inner">
         <div class="section-tag reveal">Proyectos</div>
@@ -329,14 +329,23 @@
 
         <div class="projects-grid">
 
-          <!-- Proyecto 1: Plugin LAE -->
+          <!-- Proyecto: Plugin LAE -->
           <div class="project-card reveal reveal-d1">
-            <div class="project-img">
-              <img
-                src="assets/img/plugin-LAE.png"
-                alt="Captura del Plugin LAE"
-                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>plugin-LAE.png</div>'"
-              >
+            <div class="project-img has-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="assets/img/plugin-LAE.png" alt="Plugin LAE - Vista principal">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/plugin-LAE-2.png" alt="Plugin LAE - Age Gate">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/plugin-LAE-3.png" alt="Plugin LAE - Panel admin">
+                </div>
+              </div>
+              <button class="carousel-btn prev">‹</button>
+              <button class="carousel-btn next">›</button>
+              <div class="carousel-dots"></div>
             </div>
             <div class="project-info">
               <span class="project-status status-live">Producción</span>
@@ -357,29 +366,41 @@
                 <span class="tag">CSS Vars</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Raul-Labrador" target="_blank" rel="noopener">↗ GitHub</a>
+                <a href="https://github.com/Raul-Labrador/Plugin-LAE" target="_blank" rel="noopener">↗ GitHub</a>
               </div>
             </div>
           </div>
 
-          <!-- Proyecto 2: Portfolio Artista -->
+          <!-- Proyecto: Portfolio Artista -->
           <div class="project-card reveal reveal-d2">
-            <div class="project-img">
-              <img
-                src="assets/img/portfolio-artista.png"
-                alt="Captura del portfolio"
-                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>portfolio-artista.png</div>'"
-              >
+            <div class="project-img has-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="assets/img/portfolio-artista.png" alt="Portfolio Artista - Hero">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/portfolio-artista-2.png" alt="Portfolio Artista - Discografía">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/portfolio-artista-3.png" alt="Portfolio Artista - Merchandising">
+                </div>
+              </div>
+              <button class="carousel-btn prev">‹</button>
+              <button class="carousel-btn next">›</button>
+              <div class="carousel-dots"></div>
             </div>
             <div class="project-info">
               <span class="project-status status-live">Demo</span>
               <div class="project-name">Portfolio Artista</div>
               <p class="project-desc">
-                Portfolio de un artista de elección propia (en este caso TheWeeknd), es una single-page,
-                donde tenemos que promocionarlo y simular una gira, además tenemos que mostrar sus álbumes y su merchandaising
+                Single-page promocional para artista musical con discografía interactiva,
+                previews de canciones integradas vía Spotify, simulación de gira y tienda
+                de merchandising.
               </p>
               <div class="project-tags">
+                <span class="tag">HTML5</span>
                 <span class="tag">Vanilla JS (ES Modules)</span>
+                <span class="tag">Spotify API</span>
                 <span class="tag">CSS modular</span>
                 <span class="tag">Diseño propio</span>
               </div>
@@ -389,24 +410,33 @@
             </div>
           </div>
 
-          <!-- Proyecto 3: Restaurant -->
+          <!-- Proyecto: Restaurant -->
           <div class="project-card reveal reveal-d2">
-            <div class="project-img">
-              <img
-                src="assets/img/restaurant.png"
-                alt="Captura del portfolio"
-                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>restaurant.png</div>'"
-              >
+            <div class="project-img has-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="assets/img/restaurant.png" alt="Restaurant - Hero">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/restaurant-2.png" alt="Restaurant - Menú">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/restaurant-3.png" alt="Restaurant - Equipo">
+                </div>
+              </div>
+              <button class="carousel-btn prev">‹</button>
+              <button class="carousel-btn next">›</button>
+              <div class="carousel-dots"></div>
             </div>
             <div class="project-info">
               <span class="project-status status-live">Demo</span>
-              <div class="project-name">Restaurant</div>
+              <div class="project-name">Devanur Restaurant</div>
               <p class="project-desc">
-                Tenemos un diseño para vender para un restaurant. Es una página donde nos encontramos diferentes secciones dentro
-                como son Home, Team, Menu y Contact. Es un restaurant completamente inventado, por lo que las imágenes son de 
-                FreePik
+                Web completa para restaurante de alta cocina con presentación del equipo,
+                carta gastronómica y formulario de contacto.
               </p>
               <div class="project-tags">
+                <span class="tag">HTML5</span>
                 <span class="tag">Vanilla JS (ES Modules)</span>
                 <span class="tag">CSS modular</span>
                 <span class="tag">Diseño propio</span>
@@ -417,24 +447,35 @@
             </div>
           </div>
 
-          <!-- Proyecto 3: Tourism Office -->
+          <!-- Proyecto: Tourism Office -->
           <div class="project-card reveal reveal-d2">
-            <div class="project-img">
-              <img
-                src="assets/img/T-Office.png"
-                alt="Captura del portfolio"
-                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>T-Office.png</div>'"
-              >
+            <div class="project-img has-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="assets/img/T-Office.png" alt="Tourism Office - Hero">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/T-Office-2.png" alt="Tourism Office - Rutas">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/T-Office-3.png" alt="Tourism Office - Destinos">
+                </div>
+              </div>
+              <button class="carousel-btn prev">‹</button>
+              <button class="carousel-btn next">›</button>
+              <div class="carousel-dots"></div>
             </div>
             <div class="project-info">
               <span class="project-status status-live">Demo</span>
-              <div class="project-name">Tourism Office</div>
+              <div class="project-name">Türkiye Tourism Office</div>
               <p class="project-desc">
-                Una página sobre una oficina de turismo de Turquía, nos vamos a encontrar información sobre el país,
-                rutas, oficinas y mucha más información
+                Web de promoción turística con rutas planificadas, lugares destacados,
+                información cultural del país y diseño orientado a atraer visitantes
+                internacionales.
               </p>
               <div class="project-tags">
-                <span class="tag">Vanilla JS (ES Modules)</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">Vanilla JS</span>
                 <span class="tag">CSS modular</span>
                 <span class="tag">Diseño propio</span>
               </div>
@@ -444,7 +485,97 @@
             </div>
           </div>
 
-          <!-- Proyecto 5: Big Data WIP (ocupa todo el ancho) -->
+          <!-- Proyecto: RentDrive TFG -->
+          <div class="project-card reveal reveal-d2">
+            <div class="project-img has-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="assets/img/neuvo.png" alt="Neuvo - Catálogo">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/neuvo-2.png" alt="Neuvo - Reservas">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/neuvo-3.png" alt="Neuvo - GPS Tracking">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/neuvo-4.png" alt="Neuvo - Panel admin">
+                </div>
+              </div>
+              <button class="carousel-btn prev">‹</button>
+              <button class="carousel-btn next">›</button>
+              <div class="carousel-dots"></div>
+            </div>
+            <div class="project-info">
+              <span class="project-status status-live">TFG</span>
+              <div class="project-name">Neuvo (RentDrive)</div>
+              <p class="project-desc">
+                Gestor de alquiler de vehículos desarrollado como TFG. Tema WordPress
+                personalizado con Custom Post Type propio conectado a una API REST en
+                Laravel. Incluye reservas con disponibilidad en tiempo real, panel de
+                administración y <strong>tracking GPS en vivo</strong> de la flota.
+              </p>
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">Custom Post Type</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">REST API</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">GPS Tracking</span>
+                <span class="tag">Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Raul-Labrador/neuvo-rentdrive" target="_blank" rel="noopener">↗ GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto: VideoClub Laravel -->
+          <div class="project-card reveal reveal-d2">
+            <div class="project-img has-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="assets/img/videoclub.png" alt="VideoClub - Cartelera">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/videoclub-2.png" alt="VideoClub - Ficha película">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/videoclub-3.png" alt="VideoClub - TMDB automático">
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img/videoclub-4.png" alt="VideoClub - Panel admin">
+                </div>
+              </div>
+              <button class="carousel-btn prev">‹</button>
+              <button class="carousel-btn next">›</button>
+              <div class="carousel-dots"></div>
+            </div>
+            <div class="project-info">
+              <span class="project-status status-live">Demo</span>
+              <div class="project-name">VideoClub App</div>
+              <p class="project-desc">
+                Aplicación de videoclub con Laravel — reservas, valoraciones y panel de
+                administración. Integración automática con <strong>TMDB API</strong>:
+                al añadir una película sin carátula, el sistema la obtiene y almacena solo.
+                API REST propia con paginación y respuestas JSON estándar.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">TMDB API</span>
+                <span class="tag">REST API</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Blade</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Raul-Labrador/videoclub-laravel-tmdb" target="_blank" rel="noopener">↗ GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto: Big Data WIP (ocupa todo el ancho) -->
           <div class="project-card wip reveal reveal-d3">
             <div class="project-img">
               <div class="project-img-placeholder">
@@ -454,7 +585,7 @@
             </div>
             <div class="project-info">
               <span class="project-status status-wip">En Desarrollo</span>
-              <div class="project-name">Proyecto Big Data — Verano 2025</div>
+              <div class="project-name">Proyecto Big Data — Verano 2026</div>
               <p class="project-desc">
                 Pipeline de análisis de datos con visualizaciones interactivas. Exploración
                 de datasets reales con Python, Pandas y técnicas de ML. Dashboard de resultados
@@ -464,7 +595,7 @@
               <div class="project-tags">
                 <span class="tag learning">Python</span>
                 <span class="tag learning">Pandas</span>
-                <span class="tag learning">Scikit-Learn</span>
+                <span class="tag learning">Matplotlib</span>
                 <span class="tag learning">Visualización</span>
                 <span class="tag learning">Dashboard</span>
               </div>
@@ -538,7 +669,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer-left">© 2025 Raúl Labrador</div>
+      <div class="footer-left">© 2026 Raúl Labrador</div>
       <div class="footer-right">DAW · DEPIM · <span>BigData &amp; IA</span></div>
     </footer>
 

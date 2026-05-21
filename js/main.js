@@ -14,6 +14,7 @@ import { initCursor }      from './cursor.js';
 import { initNav }         from './nav.js';
 import { initReveal, initSkillBars } from './scroll.js';
 import { initTypewriter }  from './typewriter.js';
+import { initCarousels }  from './carousel.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initBackground();   // Canvas de partículas
@@ -22,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();       // Animación de entrada en scroll
   initSkillBars();    // Barras de habilidad animadas
   initTypewriter();   // Efecto máquina de escribir en hero
+  initCarousels();
 });
